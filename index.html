@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
       integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Ollie Ballinger - PICAN Data </title>
+    <title>Ships</title>
   </head>
 
 <div class="img-magnifier-container">
@@ -28,7 +28,7 @@ var img = new Image();
 img.onload = function() {
   var img, glass, w, h, bw, zoom;	
 	img = document.getElementById("myimage");
-	zoom=15
+	zoom=5
 /*create magnifier glass:*/
   glass = document.createElement("DIV");
   glass.setAttribute("class", "img-magnifier-glass");
@@ -37,8 +37,8 @@ img.onload = function() {
   /*set background properties for the magnifier glass:*/
   glass.style.backgroundImage = "url('" + img.src + "')";
   glass.style.backgroundRepeat = "no-repeat";
-  glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
-  bw = 3;
+  glass.style.backgroundSize = (img.width * zoom ) + "px " + (img.height * zoom) + "px";
+  bw = 0;
   w = glass.offsetWidth / 2;
   h = glass.offsetHeight / 2;
   /*execute a function when someone moves the magnifier glass over the image:*/
