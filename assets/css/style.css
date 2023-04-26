@@ -45,8 +45,8 @@
   border-radius: 50%;
   cursor: none;
   /*Set the size of the magnifier glass:*/
-  width: 250px;
-  height: 250px;
+  width: 500px;
+  height: 500px;
 }
 
 /* Mapbox styling*/
